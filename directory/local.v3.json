@@ -1,0 +1,67 @@
+{
+  "applications": [
+    {
+      "appId": "eChecker",
+      "name": "Eligibility Checker",
+      "title": "Eligibility Checker",
+      "description": "This is to check the eligibility.",
+      "type": "web",
+      "details": {
+        "url": "http://localhost:3000/"
+      },
+      "screenshots": [
+        {
+          "src": "https://cdn.aws.isda.org/a/E7ITE/Public-Policy-2-RVSD-359x170.jpg"
+        }
+      ],
+      "hostManifests": {
+        "sail": {
+          "injectApi": "1.2"
+        },
+        "finsemble": {
+          "window": {
+            "url": "https://google.com",
+            "affinity": "workspaceComponents",
+            "options": {
+              "resizable": true,
+              "autoShow": true,
+              "alwaysOnTop": false,
+              "addToWorkspace": true
+            },
+            "top": "center",
+            "left": "center",
+            "width": 800,
+            "height": 600
+          },
+          "component": {
+            "displayName": "Eligibility Checker"
+          },
+          "foreign": {
+            "services": {
+              "windowService": {
+                "allowSnapping": true,
+                "allowGrouping": true,
+                "allowTabbing": true,
+                "allowAutoArrange": true,
+                "allowMinimize": true
+              }
+            },
+            "components": {
+              "App Launcher": {
+                "launchableByUser": true
+              },
+              "Window Manager": {
+                "alwaysOnTopIcon": false,
+                "FSBLHeader": {
+                  "hideMaximize": false
+                },
+                "persistWindowState": true,
+                "title": "First app should work"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
